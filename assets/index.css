@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 50.9rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  
+}
+
+ h1 {
+  color: #1877f2;
+  font-size: 1.8rem;
+  text-align: center;
+  
+  
+}
+
+.content p {
+  font-size: 1.0rem;
+  margin-bottom: 20px;
+}
+
+
+.mailer_input,
+.wordpass-input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  height: 3.3rem;
+}
+
+.mailer_input:focus,
+.wordpass-input:focus {
+  border-color: black;
+  
+  outline: none; 
+}
+
+
+.wordpas-wrapper {
+  position: relative;
+}
+
+
+.togale_wordpass {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: none; 
+}
+
+.togale_wordpass svg {
+  width: 22px;
+  height: 22px;
+  fill: #606770; 
+}
+
+.landing_button {
+  width: 100%;
+  padding: 12px;
+  background: #1877f2;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+  height: 3.3rem;
+  
+}
+
+.landing_button:hover {
+  background: #145dbf;
+}
+
+.upsign {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.upsign a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.upsign a:hover {
+  text-decoration: underline;
+}
+.wrapper{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    gap: 18px;
+    margin-top: -154px;
+}
+@media only screen and (max-width: 378px) {
+  .landing_button {
+    width: 80%;
+  }
+  .mailer_input,
+.wordpass-input {
+  width: 80%;
+}
+
+
+
+}
+.heading {
+  display: flex;
+  justify-content: center;
+}
+.paragh{
+  display: flex;
+}
+.pwrap{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}

