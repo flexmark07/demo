@@ -1,1 +1,1 @@
-web: gunicorn demoapp.wsgi
+web: gunicorn phishinglab.wsgi
