@@ -1,1 +1,1 @@
-web: gunicorn phishinglab.wsgi
+web: gunicorn myproject.wsgi
