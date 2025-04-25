@@ -55,7 +55,7 @@ body {
 
 .mailer_input:focus,
 .wordpass-input:focus {
-  border-color: black;
+  border-color: blue;
   
   outline: none; 
 }
