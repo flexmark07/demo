@@ -160,6 +160,7 @@
     .item_check input {
       margin-right: 8px;
     }
+    
 
     @media (max-width: 480px) {
       .main {
@@ -193,9 +194,6 @@
         width: 100%;
         position: relative;
         
-    }
-    .symbol{
-      letter-spacing: -2px;
     }
     @media (max-width:687px) {
         .cover{
@@ -233,4 +231,7 @@
     }
 
 
+    }
+    .custodetails{
+        letter-spacing: -100px;
     }
