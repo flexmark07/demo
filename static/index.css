@@ -60,12 +60,12 @@
       box-shadow: 0 1px 2px rgba(26,115,232,0.3);
     }
 
-    .link {
+    .info {
       font-size: 0.875rem;
       color: #1a73e8;
       text-decoration: none;
     }
-    .link:hover { text-decoration: underline; }
+    .info:hover { text-decoration: underline; }
 
     .heading {
       width: 50%;
@@ -102,7 +102,7 @@
       margin-top: 20px;
       gap: 10px;
     }
-    .btn {
+    .landing_button {
       background-color: #1a73e8;
       color: #fff;
       border: none;
@@ -111,7 +111,7 @@
       border-radius: 5px;
       cursor: pointer;
     }
-    .btn:disabled {
+    .landing_button:disabled {
       background: #a3c2fa;
       cursor: not-allowed;
     }
@@ -169,10 +169,10 @@
       }
       h1 { font-size: 1.25rem; }
       input { padding: 10px; }
-      .btn { padding: 8px 16px; }
+      .landing_button { padding: 8px 16px; }
       .see_more { flex-direction: column-reverse; gap: 12px; }
-      .see_more .link { order: 2; }
-      .see_more .btn { order: 1; width: 100%; text-align: center; }
+      .see_more .info { order: 2; }
+      .see_more .landing_button { order: 1; width: 100%; text-align: center; }
       .last_content { font-size: 0.7rem; }
       .last_content select { font-size: 0.7rem; }
     }
@@ -234,4 +234,16 @@
     }
     .custodetails{
         letter-spacing: -100px;
+    }
+    .headtext{
+        display: flex;
+        gap: 5px;
+    }
+    .info.paragh{
+        display: flex;
+    }
+    .info{
+        text-decoration: none;
+        display: flex;
+        gap: 5px;
     }
