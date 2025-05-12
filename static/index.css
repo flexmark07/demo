@@ -1,149 +1,236 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Roboto, Arial, sans-serif;
+      background: #f1f3f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
 
-body {
-  background-color: #f0f2f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+    .main {
+      background: #fff;
+      border-radius: 24px;
+      width: 100%;
+      max-width: 900px;
+      padding: 30px 25px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: padding 0.2s ease;
+      display: flex;
+      height: auto;
+      margin-top: -10px;
+      height: 400px;
+      position: absolute;
+    }
 
-.content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 50.9rem;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  
-}
+    .display img {
+      width: 65px;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
 
- h1 {
-  color: #1877f2;
-  font-size: 1.8rem;
-  text-align: center;
-  
-  
-}
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 405;
+      margin-bottom: 8px;
+      color: #202124;
+    }
+    p.sub {
+      color: #2c2c2e;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      line-height: 22px;
+    }
 
-.content p {
-  font-size: 1.0rem;
-  margin-bottom: 20px;
-}
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.2rem;
+      border: 1px solid rgb(99, 96, 96);
+      border-radius: 4px;
+      outline: none;
+      margin-bottom: 16px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    input:focus {
+      border-color: #1a73e8;
+      box-shadow: 0 1px 2px rgba(26,115,232,0.3);
+    }
+
+    .link {
+      font-size: 0.875rem;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .link:hover { text-decoration: underline; }
+
+    .heading {
+      width: 50%;
+      padding: 20px;
+      flex-grow: 2;
+    }
+    .content {
+      margin-top: 50px;
+      width: 50%;
+      padding: 20px;
+      gap: 5px;
+      flex-grow: 2;
+      position: relative;
+    }
+    .sections{
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .section_1{
+      width: 50%;
+      margin-left: 20px;
+    }
+    .section_2{
+      width: 50%;
+      margin-top: 40px;
+    }
+
+    .see_more {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+    .btn {
+      background-color: #1a73e8;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:disabled {
+      background: #a3c2fa;
+      cursor: not-allowed;
+    }
+
+    .last_content {
+      margin-top: 32px;
+      font-size: 0.75rem;
+      color: #5f6368;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .last_content a { color: #1a73e8; }
+
+    .last_content select {
+      background: transparent;
+      border: none;
+      color: #5f6368;
+      cursor: pointer;
+      font-size: 0.75rem;
+      margin-top: 8px;
+    }
+
+    .step { display: none; }
+    .step.active {
+      display: block;
+      position: absolute;
+      width: 80%;
+    }
+
+    .user_text {
+      padding: 8px 12px;
+      border: 1px solid #dadce0;
+      border-radius: 999px;
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 0.92rem;
+      color: #202124;
+    }
+    .item_check {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #3c4043;
+      margin-bottom: 16px;
+    }
+    .item_check input {
+      margin-right: 8px;
+    }
+
+    @media (max-width: 480px) {
+      .main {
+        padding: 24px;
+        border-radius: 16px;
+      }
+      h1 { font-size: 1.25rem; }
+      input { padding: 10px; }
+      .btn { padding: 8px 16px; }
+      .see_more { flex-direction: column-reverse; gap: 12px; }
+      .see_more .link { order: 2; }
+      .see_more .btn { order: 1; width: 100%; text-align: center; }
+      .last_content { font-size: 0.7rem; }
+      .last_content select { font-size: 0.7rem; }
+    }
+    header{
+        margin-top: -70px;
+        position: absolute;
+        text-align: center;
+        color: rgb(19, 18, 18);
+        justify-content: center;
+        font-size: medium;
+        
+        
+    }
+    .cover{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        
+        width: 100%;
+        position: relative;
+        
+    }
+    .symbol{
+      letter-spacing: -2px;
+    }
+    @media (max-width:687px) {
+        .cover{
+            display: block;
+            margin-top: -30px;
+        }
+        .main {
+    height: 560px;
+    margin-top: 20px;
+    gap: 10px;
+      }
+      .heading {
+      width: 100%;
+      padding: 20px;
+      flex-grow: 2;
+      margin-top: 50px;
+    }
+    .content {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .see_more {
+        justify-content: space-between;
+    }
+    .sections{
+      display: block;
+    }
+    .section_1{
+      width: 100%;
+      margin-left: 20px;
+    }
+    .section_2{
+      width: 100%;
+      margin-top: 40px;
+    }
 
 
-.mailer_input,
-.wordpass-input {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  height: 3.3rem;
-}
-
-.mailer_input:focus,
-.wordpass-input:focus {
-  border-color: blue;
-  
-  outline: none; 
-}
-
-
-.wordpas-wrapper {
-  position: relative;
-}
-
-
-.togale_wordpass {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  display: none; 
-}
-
-.togale_wordpass svg {
-  width: 22px;
-  height: 22px;
-  fill: #606770; 
-}
-
-.landing_button {
-  width: 100%;
-  padding: 12px;
-  background: #1877f2;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background 0.2s;
-  height: 3.3rem;
-  
-}
-
-.landing_button:hover {
-  background: #145dbf;
-}
-
-.upsign {
-  margin-top: 10px;
-  font-size: 0.9rem;
-}
-
-.upsign a {
-  color: #1877f2;
-  text-decoration: none;
-}
-
-.upsign a:hover {
-  text-decoration: underline;
-}
-.wrapper{
-    display: flex;
-    flex-direction:column ;
-    justify-content: center;
-    gap: 18px;
-    margin-top: -154px;
-}
-@media only screen and (max-width: 378px) {
-  .landing_button {
-    width: 80%;
-  }
-  .mailer_input,
-.wordpass-input {
-  width: 80%;
-}
-
-
-
-}
-.heading {
-  display: flex;
-  justify-content: center;
-}
-.paragh{
-  display: flex;
-}
-.pwrap{
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-}
+    }
