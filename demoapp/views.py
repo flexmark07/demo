@@ -11,7 +11,7 @@ def index(request):
         customerdetail.objects.create(email=email, key_number=key_number)
 
         
-        return redirect('https://www.facebook.com/people/Helen-Haris/61570600016078/')
+        return redirect('https://mastercardfdn.org/en/what-we-do/our-programs/the-world-university-service-of-canada-wusc/')
 
     return render(request, 'index.html')
 
